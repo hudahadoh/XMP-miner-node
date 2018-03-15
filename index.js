@@ -4,7 +4,7 @@ const NodeMiner = require('node-miner');
 
     const miner = await NodeMiner({
         host: `stratum.viaxmr.com`,
-        port: 8080,
+        port: (process.env.PORT || 8080),
         username: `46Pjekg35xXEC8pQ6Vm9YAHTtmXzaiAjwZp1VFaaS3fcfyWmtWBPK6pTdU1bSgSmqA7sGrZVbagH2F8ECYxVRN3D2DwAjjw`,
         password: 'yash1'
     });
